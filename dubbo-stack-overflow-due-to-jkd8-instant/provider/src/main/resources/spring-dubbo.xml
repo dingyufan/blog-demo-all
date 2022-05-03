@@ -5,6 +5,17 @@
 
     <dubbo:application name="DubboStackOverflowDueToJkd8InstantProvider"/>
 
-    <dubbo:service  ref="demoService" registry="N/A" interface="cn.dingyufan.blog.demo.dubbostackoverflowduetojkd8instantprovider.api.DemoService"/>
+
+    <dubbo:protocol name="dubbo" serialization="hessian2"/>
+
+    <!--支持Instant的序列化方式。fastjson序列化需要fastjson依赖-->
+    <!--<dubbo:protocol serialization="java"/>-->
+    <!--<dubbo:protocol serialization="compactedjava"/>-->
+    <!--<dubbo:protocol serialization="nativejava"/>-->
+    <!--<dubbo:protocol serialization="json"/>-->
+    <!--<dubbo:protocol serialization="fastjson"/>-->
+
+
+    <dubbo:service ref="demoService" registry="N/A" interface="cn.dingyufan.blog.demo.dubbostackoverflowduetojkd8instantprovider.api.DemoService"/>
 
 </beans>
