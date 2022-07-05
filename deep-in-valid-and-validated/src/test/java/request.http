@@ -1,0 +1,30 @@
+###
+#POST http://localhost:8080/methodA
+#POST http://localhost:8080/methodB
+#POST http://localhost:8080/methodC
+#POST http://localhost:8080/methodD
+POST http://localhost:8080/methodE
+Content-Type: application/json
+
+{
+  "id": null,
+  "name": "zhangsan",
+  "age": 6,
+  "performances": [
+    {
+      "subject": "chinese",
+      "score": 90
+    },
+    {
+      "subject": "math",
+      "score": -1
+    }
+  ]
+}
+
+###
+POST http://localhost:8080/methodF?age=-1
+
+
+###
+POST http://localhost:8080/invoke
