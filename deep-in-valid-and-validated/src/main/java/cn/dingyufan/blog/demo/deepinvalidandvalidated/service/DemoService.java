@@ -16,4 +16,7 @@ public interface DemoService {
 
     Student invoke(@NotBlank String str, @NotNull @Valid Student student);
 
+
+    @NotNull Student invoke2();
+
 }

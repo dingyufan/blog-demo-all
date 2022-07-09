@@ -16,4 +16,9 @@ public class DemoServiceImpl implements DemoService {
     public Student invoke(String str, Student student) {
         return student;
     }
+
+    @Override
+    public Student invoke2() {
+        return null;
+    }
 }
