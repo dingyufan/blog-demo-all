@@ -2,7 +2,7 @@ package cn.dingyufan.blog.demo.deepinvalidandvalidated.controller.param;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import org.hibernate.validator.constraints.Length;
+import lombok.NoArgsConstructor;
 import org.hibernate.validator.constraints.Range;
 
 import javax.validation.Valid;
@@ -29,6 +29,7 @@ public class Student {
     List<@Valid Performance> performances;
 
     @Data
+    @NoArgsConstructor
     @AllArgsConstructor
     static class Performance {
         @NotBlank
